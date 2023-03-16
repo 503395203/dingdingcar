@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-16 13:39:51
+# 创建时间：2023-03-16 13:40:42
 # 使用模版：V2RaySE 默认模版
-# 节点数量：13
+# 节点数量：12
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -22,7 +22,6 @@ dns:
 
 proxies:
   - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"trojan","server":"oss-cn-shanghai.westdatacloud.top","port":20048,"udp":true,"password":"626351FA-3CA6-8118-FADF-CCDBCD620871","sni":"v12.kwaicdn.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇸🇬_SG_新加坡_1_1","type":"ss","server":"3.0.90.196","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"🇸🇬_SG_新加坡_3_1","type":"ss","server":"3.1.6.229","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"🇸🇬_SG_新加坡_1_2","type":"ss","server":"18.143.118.51","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港","type":"ssr","server":"120.198.71.182","port":560,"password":"mblank1port","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"t.me/vpnhat","protocol-param":"51025:o0159ww"}
@@ -41,7 +40,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1_1
       - 🇸🇬_SG_新加坡_3_1
       - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
@@ -60,7 +58,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1_1
       - 🇸🇬_SG_新加坡_3_1
       - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
@@ -79,7 +76,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1_1
       - 🇸🇬_SG_新加坡_3_1
       - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
@@ -97,7 +93,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1_1
       - 🇸🇬_SG_新加坡_3_1
       - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
@@ -115,7 +110,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1_1
       - 🇸🇬_SG_新加坡_3_1
       - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
@@ -133,7 +127,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1_1
       - 🇸🇬_SG_新加坡_3_1
       - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
@@ -168,7 +161,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1_1
       - 🇸🇬_SG_新加坡_3_1
       - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
