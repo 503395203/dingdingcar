@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-16 13:38:25
+# 创建时间：2023-03-16 13:39:51
 # 使用模版：V2RaySE 默认模版
 # 节点数量：13
 ####################################
@@ -22,12 +22,12 @@ dns:
 
 proxies:
   - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国","type":"trojan","server":"oss-cn-shanghai.westdatacloud.top","port":20048,"udp":true,"password":"626351FA-3CA6-8118-FADF-CCDBCD620871","sni":"v12.kwaicdn.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇸🇬_SG_新加坡_1","type":"ss","server":"3.0.90.196","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇸🇬_SG_新加坡_3","type":"ss","server":"3.1.6.229","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇸🇬_SG_新加坡_1","type":"ss","server":"18.143.118.51","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇸🇬_SG_新加坡_1_1","type":"ss","server":"3.0.90.196","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇸🇬_SG_新加坡_3_1","type":"ss","server":"3.1.6.229","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇸🇬_SG_新加坡_1_2","type":"ss","server":"18.143.118.51","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港","type":"ssr","server":"120.198.71.182","port":560,"password":"mblank1port","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_md5","obfs-param":"t.me/vpnhat","protocol-param":"51025:o0159ww"}
   - {"name":"🇸🇬_SG_新加坡_2","type":"ss","server":"13.212.244.29","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇸🇬_SG_新加坡_3","type":"ss","server":"13.229.201.5","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇸🇬_SG_新加坡_3_2","type":"ss","server":"13.229.201.5","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"🇸🇬_SG_新加坡_4","type":"ss","server":"3.0.90.196","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
   - {"name":"🇺🇸_US_美国->🇩🇪_DE_德国","type":"vmess","server":"de1.scproxy.top","port":443,"cipher":"auto","uuid":"823c31da-701f-483d-b36e-896e5cf0987a","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
   - {"name":"🇺🇸_US_美国","type":"vmess","server":"173.245.59.168","port":8080,"cipher":"auto","uuid":"27848739-7e62-4138-9fd3-938a63964b6b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/KTR","headers":{"host":"4.arvanktbr.store"}}}
@@ -41,12 +41,12 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_3
-      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_1_1
+      - 🇸🇬_SG_新加坡_3_1
+      - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇸🇬_SG_新加坡_2
-      - 🇸🇬_SG_新加坡_3
+      - 🇸🇬_SG_新加坡_3_2
       - 🇸🇬_SG_新加坡_4
       - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇺🇸_US_美国
@@ -60,12 +60,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_3
-      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_1_1
+      - 🇸🇬_SG_新加坡_3_1
+      - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇸🇬_SG_新加坡_2
-      - 🇸🇬_SG_新加坡_3
+      - 🇸🇬_SG_新加坡_3_2
       - 🇸🇬_SG_新加坡_4
       - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇺🇸_US_美国
@@ -79,12 +79,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_3
-      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_1_1
+      - 🇸🇬_SG_新加坡_3_1
+      - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇸🇬_SG_新加坡_2
-      - 🇸🇬_SG_新加坡_3
+      - 🇸🇬_SG_新加坡_3_2
       - 🇸🇬_SG_新加坡_4
       - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇺🇸_US_美国
@@ -97,12 +97,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_3
-      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_1_1
+      - 🇸🇬_SG_新加坡_3_1
+      - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇸🇬_SG_新加坡_2
-      - 🇸🇬_SG_新加坡_3
+      - 🇸🇬_SG_新加坡_3_2
       - 🇸🇬_SG_新加坡_4
       - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇺🇸_US_美国
@@ -115,12 +115,12 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_3
-      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_1_1
+      - 🇸🇬_SG_新加坡_3_1
+      - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇸🇬_SG_新加坡_2
-      - 🇸🇬_SG_新加坡_3
+      - 🇸🇬_SG_新加坡_3_2
       - 🇸🇬_SG_新加坡_4
       - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇺🇸_US_美国
@@ -133,12 +133,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_3
-      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_1_1
+      - 🇸🇬_SG_新加坡_3_1
+      - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇸🇬_SG_新加坡_2
-      - 🇸🇬_SG_新加坡_3
+      - 🇸🇬_SG_新加坡_3_2
       - 🇸🇬_SG_新加坡_4
       - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇺🇸_US_美国
@@ -168,12 +168,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_3
-      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_1_1
+      - 🇸🇬_SG_新加坡_3_1
+      - 🇸🇬_SG_新加坡_1_2
       - 🇨🇳_CN_中国->🇭🇰_HK_香港
       - 🇸🇬_SG_新加坡_2
-      - 🇸🇬_SG_新加坡_3
+      - 🇸🇬_SG_新加坡_3_2
       - 🇸🇬_SG_新加坡_4
       - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇺🇸_US_美国
