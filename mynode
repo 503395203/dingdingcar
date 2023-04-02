@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-30 13:21:45
+# 创建时间：2023-04-02 14:06:37
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：5
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,67 +21,74 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇯🇵_JP_日本","type":"ss","server":"43.207.117.53","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇨🇦_CA_加拿大->🇺🇸_US_美国","type":"vmess","server":"us1-66y.bilicapr.cn","port":443,"cipher":"auto","uuid":"9a641e61-1bdf-4407-bc92-da95f28fac25","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇰🇷_KR_韩国","type":"ss","server":"43.201.33.242","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇸🇬_SG_新加坡","type":"vmess","server":"n1674862944.zhidemy.cn","port":443,"cipher":"auto","uuid":"c2a63c7a-f32f-4792-b011-c481184bda9e","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇸🇬_SG_新加坡_1","type":"ss","server":"3.1.50.20","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇸🇬_SG_新加坡_2","type":"ss","server":"13.213.55.42","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇭🇰_HK_香港","type":"vmess","server":"103.135.250.115","port":10512,"cipher":"auto","uuid":"58781eee-baba-6666-baba-2ca0ada6568b","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇺🇸_US_美国","type":"ss","server":"54.189.189.150","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇸🇬_SG_新加坡_3","type":"ss","server":"13.213.55.42","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵_JP_日本
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷_KR_韩国
-      - 🇸🇬_SG_新加坡
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_香港
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵_JP_日本
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷_KR_韩国
-      - 🇸🇬_SG_新加坡
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_香港
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵_JP_日本
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷_KR_韩国
-      - 🇸🇬_SG_新加坡
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_香港
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵_JP_日本
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷_KR_韩国
-      - 🇸🇬_SG_新加坡
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_香港
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵_JP_日本
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷_KR_韩国
-      - 🇸🇬_SG_新加坡
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_香港
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵_JP_日本
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷_KR_韩国
-      - 🇸🇬_SG_新加坡
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_香港
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -104,10 +111,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵_JP_日本
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷_KR_韩国
-      - 🇸🇬_SG_新加坡
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
+      - 🇭🇰_HK_香港
+      - 🇺🇸_US_美国
+      - 🇸🇬_SG_新加坡_3
 
 rules:
 # 本地/局域网地址
