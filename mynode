@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-17 14:07:56
+# 创建时间：2023-04-18 13:26:04
 # 使用模版：V2RaySE 默认模版
-# 节点数量：6
+# 节点数量：5
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -22,11 +22,10 @@ dns:
 
 proxies:
   - {"name":"🇯🇵_JP_日本->🇸🇬_SG_新加坡","type":"trojan","server":"fscsg.fscloud123456789.com","port":443,"udp":true,"password":"ed19b239-8e49-4b82-979a-24b84fa7b173","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇯🇵_JP_日本","type":"trojan","server":"jp.stablize.top","port":443,"udp":true,"password":"5962fe8f-d510-4046-a21e-e1acede672e6","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇭🇰_HK_香港_1","type":"vmess","server":"hk3.af49c4e4c2ef.sanfen001.pics","port":443,"cipher":"auto","uuid":"e5ffd02e-a82b-40d1-83aa-23f9f6841abb","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇭🇰_HK_香港_2","type":"vmess","server":"hk4.af49c4e4c2ef.sanfen001.pics","port":443,"cipher":"auto","uuid":"6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇭🇰_HK_香港_3","type":"vmess","server":"pop.china.hk.3.gfwcaonimanmsl.ml","port":43953,"cipher":"auto","uuid":"c23c45f2-bc68-4479-93b5-d4173a2f2650","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
-  - {"name":"🇹🇼_TW_台湾","type":"vmess","server":"tw1.sanfen001.pics","port":443,"cipher":"auto","uuid":"134e78bd-39d4-4c39-90d7-c7639167a7a9","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇯🇵_JP_日本_1","type":"trojan","server":"jp.stablize.top","port":443,"udp":true,"password":"5962fe8f-d510-4046-a21e-e1acede672e6","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_JP_日本_2","type":"trojan","server":"fschk.fscloud123456789.com","port":443,"udp":true,"password":"2e31a75e-ce52-4d2c-95e1-41c8acdbc80c","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港","type":"ssr","server":"layercm05.initcloud.pro","port":561,"password":"mblank1port","cipher":"chacha20-ietf","obfs":"plain","protocol":"auth_aes128_md5","protocol-param":"48530:LLLiuiuiu787878"}
+  - {"name":"🇺🇸_US_美国","type":"vmess","server":"192.74.242.150","port":44667,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -34,11 +33,10 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇭🇰_HK_香港_3
-      - 🇹🇼_TW_台湾
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇺🇸_US_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -46,11 +44,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇭🇰_HK_香港_3
-      - 🇹🇼_TW_台湾
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇺🇸_US_美国
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -58,44 +55,40 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇭🇰_HK_香港_3
-      - 🇹🇼_TW_台湾
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇺🇸_US_美国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇭🇰_HK_香港_3
-      - 🇹🇼_TW_台湾
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇺🇸_US_美国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇭🇰_HK_香港_3
-      - 🇹🇼_TW_台湾
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇺🇸_US_美国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇭🇰_HK_香港_3
-      - 🇹🇼_TW_台湾
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇺🇸_US_美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -119,11 +112,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇯🇵_JP_日本->🇸🇬_SG_新加坡
-      - 🇯🇵_JP_日本
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇭🇰_HK_香港_3
-      - 🇹🇼_TW_台湾
+      - 🇯🇵_JP_日本_1
+      - 🇯🇵_JP_日本_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇺🇸_US_美国
 
 rules:
 # 本地/局域网地址
