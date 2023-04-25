@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-04-19 14:10:19
+# 创建时间：2023-04-25 13:50:54
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：3
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,109 +21,60 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇸🇬_SG_新加坡_1","type":"trojan","server":"awssg18-data.amazon-azure.com","port":443,"udp":true,"password":"05e34875-a77c-4156-8bc8-f815f235905a","sni":"data.amazon-azure.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇭🇰_HK_香港_1","type":"vmess","server":"16.163.157.8","port":443,"cipher":"auto","uuid":"6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇭🇰_HK_香港_2","type":"vmess","server":"hk5.af49c4e4c2ef.sanfen001.pics","port":443,"cipher":"auto","uuid":"6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
-  - {"name":"🇸🇬_SG_新加坡_2","type":"trojan","server":"13.215.209.200","port":443,"udp":true,"password":"05e34875-a77c-4156-8bc8-f815f235905a","sni":"data.amazon-azure.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国","type":"trojan","server":"awshk15-data.amazon-azure.com","port":443,"udp":true,"password":"05e34875-a77c-4156-8bc8-f815f235905a","sni":"data.amazon-azure.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇸🇬_SG_新加坡_3","type":"trojan","server":"awssg11-data.amazon-azure.com","port":443,"udp":true,"password":"05e34875-a77c-4156-8bc8-f815f235905a","sni":"data.amazon-azure.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"142.4.126.56","port":33302,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"38.40.219.184","port":50462,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"192.74.242.139","port":44667,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"192.74.232.250","port":51802,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇯🇵_JP_日本","type":"vmess","server":"jp1.x898989.xyz","port":41002,"cipher":"auto","uuid":"01e07f2e-fc00-45bb-bbf5-547f58316e18","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇭🇰_HK_香港","type":"vmess","server":"hk1.b.bd6b6c503c93.sanfen001.pics","port":443,"cipher":"auto","uuid":"da9d5c74-a572-4cf4-a375-19b886f5ffc4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇸🇬_SG_新加坡","type":"ss","server":"13.215.47.74","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国
-      - 🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_香港
+      - 🇸🇬_SG_新加坡
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国
-      - 🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_香港
+      - 🇸🇬_SG_新加坡
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国
-      - 🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_香港
+      - 🇸🇬_SG_新加坡
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国
-      - 🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_香港
+      - 🇸🇬_SG_新加坡
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国
-      - 🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_香港
+      - 🇸🇬_SG_新加坡
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国
-      - 🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_香港
+      - 🇸🇬_SG_新加坡
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,16 +97,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬_SG_新加坡_1
-      - 🇭🇰_HK_香港_1
-      - 🇭🇰_HK_香港_2
-      - 🇸🇬_SG_新加坡_2
-      - 🇨🇳_CN_中国
-      - 🇸🇬_SG_新加坡_3
-      - 🇺🇸_US_美国_1
-      - 🇺🇸_US_美国_2
-      - 🇺🇸_US_美国_3
-      - 🇺🇸_US_美国_4
+      - 🇯🇵_JP_日本
+      - 🇭🇰_HK_香港
+      - 🇸🇬_SG_新加坡
 
 rules:
 # 本地/局域网地址
