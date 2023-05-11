@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-07 10:07:18
+# 创建时间：2023-05-11 13:50:36
 # 使用模版：V2RaySE 默认模版
-# 节点数量：10
+# 节点数量：7
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,109 +21,88 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇸🇬_SG_新加坡","type":"ss","server":"18.141.204.24","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
-  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","type":"ss","server":"gtm-sg-6wr31eq5o8g.gtm-i1d8.com","port":2051,"password":"Kad0X9","cipher":"aes-128-gcm"}
-  - {"name":"🇹🇼_TW_台湾","type":"vmess","server":"tw99-hinet.mynodes001.one","port":445,"cipher":"chacha20-poly1305","uuid":"69d7282c-c1f7-3af8-896c-9232c9d098cb","alterId":0,"tls":false,"skip-cert-verify":true,"network":"none"}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"38.63.17.166","port":50702,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"198.2.203.58","port":44502,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"107.167.16.87","port":45689,"cipher":"auto","uuid":"7640a1e7-9701-428e-a4b2-19b3e7dd6f9f","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"67.21.77.73","port":47140,"cipher":"auto","uuid":"fabb30e8-3a2c-4149-9651-2758f7712481","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_5","type":"vmess","server":"45.86.11.217","port":48823,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_6","type":"vmess","server":"67.21.95.69","port":53214,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_7","type":"vmess","server":"140.99.48.26","port":57102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"c20s4.jjvip8.com","port":10171,"cipher":"auto","uuid":"f7eef69d-49f3-41dc-84b9-e724fc795455","alterId":0,"tls":false,"skip-cert-verify":true,"network":""}
+  - {"name":"🇨🇳_CN_中国->🇹🇼_TW_台湾","type":"vmess","server":"223.167.41.208","port":63088,"cipher":"auto","uuid":"7feb22ed-8283-3313-a09f-c5dc1402333b","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws"}
+  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"45.88.176.9","port":53332,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_3","type":"vmess","server":"192.74.230.55","port":46680,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸_US_美国_4","type":"vmess","server":"137.175.15.249","port":45232,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬_SG_新加坡","type":"ss","server":"54.251.4.111","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇸🇨_SC_塞舌尔","type":"vmess","server":"156.251.135.11","port":53302,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇹🇼_TW_台湾
       - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
+      - 🇸🇬_SG_新加坡
+      - 🇸🇨_SC_塞舌尔
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇹🇼_TW_台湾
       - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
+      - 🇸🇬_SG_新加坡
+      - 🇸🇨_SC_塞舌尔
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇹🇼_TW_台湾
       - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
+      - 🇸🇬_SG_新加坡
+      - 🇸🇨_SC_塞舌尔
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇹🇼_TW_台湾
       - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
+      - 🇸🇬_SG_新加坡
+      - 🇸🇨_SC_塞舌尔
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇹🇼_TW_台湾
       - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
+      - 🇸🇬_SG_新加坡
+      - 🇸🇨_SC_塞舌尔
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇹🇼_TW_台湾
       - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
+      - 🇸🇬_SG_新加坡
+      - 🇸🇨_SC_塞舌尔
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,16 +125,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇹🇼_TW_台湾
       - 🇺🇸_US_美国_1
+      - 🇨🇳_CN_中国->🇹🇼_TW_台湾
       - 🇺🇸_US_美国_2
       - 🇺🇸_US_美国_3
       - 🇺🇸_US_美国_4
-      - 🇺🇸_US_美国_5
-      - 🇺🇸_US_美国_6
-      - 🇺🇸_US_美国_7
+      - 🇸🇬_SG_新加坡
+      - 🇸🇨_SC_塞舌尔
 
 rules:
 # 本地/局域网地址
