@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-23 20:00:55
+# 创建时间：2023-05-25 11:22:21
 # 使用模版：V2RaySE 默认模版
-# 节点数量：5
+# 节点数量：3
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,74 +21,60 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_1","type":"ss","server":"yd-04.paofunlink.com","port":5982,"password":"Paofu","cipher":"rc4-md5"}
-  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港_2","type":"ss","server":"yd-04.paofunlink.com","port":5980,"password":"Paofu","cipher":"rc4-md5"}
-  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","type":"trojan","server":"as.steamdownload.top","port":36642,"udp":true,"password":"87b36282-cbf6-4927-8893-f574419df9b0","sni":"datasg.steamdownload.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国","type":"trojan","server":"as.steamdownload.top","port":36613,"udp":true,"password":"87b36282-cbf6-4927-8893-f574419df9b0","sni":"datahk.steamdownload.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国->🇮🇳_IN_印度","type":"trojan","server":"as.steamdownload.top","port":36715,"udp":true,"password":"87b36282-cbf6-4927-8893-f574419df9b0","sni":"datain.steamdownload.top","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇹🇼_TW_台湾","type":"vmess","server":"tw99-hinet.mynodes001.one","port":5432,"cipher":"auto","uuid":"d5ef1df3-4069-3b25-9dc1-16b2be9b3e6b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇸🇬_SG_新加坡_1","type":"ssr","server":"sg-am3.eqsunshine.com","port":32001,"password":"3g0dHlKME","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"origin"}
+  - {"name":"🇸🇬_SG_新加坡_2","type":"ss","server":"13.212.254.215","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -111,11 +97,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_1
-      - 🇨🇳_CN_中国->🇭🇰_HK_香港_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇳_CN_中国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
+      - 🇹🇼_TW_台湾
+      - 🇸🇬_SG_新加坡_1
+      - 🇸🇬_SG_新加坡_2
 
 rules:
 # 本地/局域网地址
