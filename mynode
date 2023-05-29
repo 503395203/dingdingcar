@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-05-25 11:22:21
+# 创建时间：2023-05-29 22:25:44
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：4
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,60 +21,67 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇹🇼_TW_台湾","type":"vmess","server":"tw99-hinet.mynodes001.one","port":5432,"cipher":"auto","uuid":"d5ef1df3-4069-3b25-9dc1-16b2be9b3e6b","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇸🇬_SG_新加坡_1","type":"ssr","server":"sg-am3.eqsunshine.com","port":32001,"password":"3g0dHlKME","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","protocol":"origin"}
-  - {"name":"🇸🇬_SG_新加坡_2","type":"ss","server":"13.212.254.215","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇨🇳_CN_中国->🇭🇰_HK_香港","type":"ss","server":"1-hk-2.123445566.xyz","port":15212,"password":"1ac62a6b-305b-46ff-83a9-637ee16cde6c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇻🇳_VN_越南","type":"vmess","server":"103.82.27.163","port":80,"cipher":"auto","uuid":"8afbd60f-aa52-49e6-8f37-9aca0b90f2c8","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/zingfast.vn","headers":{"host":"%7B%22Host%22:%22%257B%2522host%2522:%2522ibolero.vn%2522%257D%22%7D"}}}
+  - {"name":"🇸🇬_SG_新加坡","type":"ss","server":"122.248.217.131","port":443,"password":"amazonskr05","cipher":"aes-256-cfb"}
+  - {"name":"🇨🇳_CN_中国","type":"trojan","server":"sg2.downloadvip.cfd","port":443,"udp":true,"password":"24575fff-8ca3-4b59-a5ea-e0c3f2f57747","sni":"download.xn--mes358a9urctx.com","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇹🇼_TW_台湾
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇻🇳_VN_越南
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇹🇼_TW_台湾
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇻🇳_VN_越南
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇻🇳_VN_越南
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇻🇳_VN_越南
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇹🇼_TW_台湾
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇻🇳_VN_越南
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇹🇼_TW_台湾
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇻🇳_VN_越南
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -97,9 +104,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼_TW_台湾
-      - 🇸🇬_SG_新加坡_1
-      - 🇸🇬_SG_新加坡_2
+      - 🇨🇳_CN_中国->🇭🇰_HK_香港
+      - 🇻🇳_VN_越南
+      - 🇸🇬_SG_新加坡
+      - 🇨🇳_CN_中国
 
 rules:
 # 本地/局域网地址
