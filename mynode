@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-06-08 23:36:47
+# 创建时间：2023-06-11 09:25:50
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：3
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -21,46 +21,60 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"🇸🇬_SG_新加坡","type":"vmess","server":"1.cashdawiodxkawjaiocjdawdawdadwrawgfsegsededwadawfgrdrcvsssl.top","port":2052,"cipher":"auto","uuid":"39771343-ecd5-4c22-b5d5-1245f1ce8125","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"ccaws.cashdawiodxkawjaiocjdawdawdadwrawgfsegsededwadawfgrdrcvsssl.top"}}}
+  - {"name":"🇺🇸_US_美国","type":"vmess","server":"162.159.142.204","port":80,"cipher":"auto","uuid":"1e12e236-9530-49b8-b293-58d323471503","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/1654431","headers":{"host":"us2.mybestjj.com"}}}
+  - {"name":"🇯🇵_JP_日本","type":"vmess","server":"45.88.43.230","port":46202,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇰🇷_KR_韩国","type":"vmess","server":"sww.kisskiss.pro","port":443,"cipher":"auto","uuid":"188362c7-7f7b-427d-9db4-0a45ee3fd4d4","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/sfbfkjfge9","headers":{"host":"sww.kisskiss.pro"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -83,7 +97,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬_SG_新加坡
+      - 🇺🇸_US_美国
+      - 🇯🇵_JP_日本
+      - 🇰🇷_KR_韩国
 
 rules:
 # 本地/局域网地址
